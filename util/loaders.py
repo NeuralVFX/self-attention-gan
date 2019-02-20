@@ -5,8 +5,6 @@ from torch.utils.data import *
 from torchvision import transforms
 import numpy as np
 import cv2
-
-
 cv2.setNumThreads(0)
 
 

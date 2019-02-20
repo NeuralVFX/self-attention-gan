@@ -38,12 +38,12 @@ def disc_conv_block(ni, nf, kernel_size=3, stride=1):
     layers = []
     conv = spectral_norm(nn.Conv2d(ni, nf, kernel_size, padding=kernel_size // 2, stride=stride))
     relu = nn.LeakyReLU(inplace=True)
-
     layers += [conv, relu]
     return nn.Sequential(*layers)
 
 
 class SelfAttention(nn.Module):
+    # block to allow convolutions to take a sneak peak at other areas of the image
     def __init__(self, in_channel):
         super(SelfAttention).__init__()
         self.query = spectral_norm(nn.Conv1d(in_channel, in_channel // 8, 1))
@@ -125,7 +125,6 @@ class Generator(nn.Module):
 
 
 class Discriminator(nn.Module):
-    # Using reverse shuffling should reduce the repetitive shimmering patterns
     def __init__(self, channels=3, filts_min=128, filts=512, kernel_size=4, layers=3, attention=False):
         super(Discriminator, self).__init__()
         operations = []
