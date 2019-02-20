@@ -57,8 +57,8 @@ python train.py --load_state output/austria_3.json --res 128 --train_epoch 5000 
 - Loss Graph Example: `output/austria_loss.jpg`
 ![](output/austria_loss.jpg)
 
-- Test Image Example (output every loop through dataset): `output/austria_6.jpg`
-![](output/austria_6.jpg)
+- Test Image Example (output every loop through dataset): `output/austria_649.jpg`
+![](output/austria_649.jpg)
 
 ## Other Notes
 
