@@ -3,7 +3,7 @@ Pytorch implementation of Self Attention Gan based on [Self-Attention Generative
 
 `THIS IS STILL IN PROGRESS, NOT READY TO CLONE`
 
-This is an attempt to build a SaGan, a Gan which used spectral norm and attention layers in both the discriminator and generator.
+This is an attempt to build a SaGan, basically a Gan using Spectral Norm and Attention Layers in both the discriminator and generator.
 
 
 
