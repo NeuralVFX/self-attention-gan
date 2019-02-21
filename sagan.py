@@ -19,6 +19,29 @@ from torch.autograd import Variable
 class Sagan:
     """
     Example usage if not using command line:
+    from sagan import *
+    params = {'dataset': 'geoPose3K_final_publish',
+              'batch_size': 8,
+              'workers': 16,
+              'res': 128,
+              'lr_disc': .0004,
+              'lr_gen': .0001,
+              'gen_max_filts': 512,
+              'gen_min_filts': 128,
+              'disc_max_filts': 512,
+              'disc_min_filts': 128,
+              'gen_stretch_z_filts': 1024,
+              'z_size': 128,
+              'disc_layers': 5,
+              'train_epoch': 200,
+              'save_every': 10,
+              'save_img_every': 10,
+              'attention': True,
+              'data_perc': 1,
+              'save_root': 'austria'}
+
+    sg = Sagan(params)
+    sg.train()
 
 
     """
