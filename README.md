@@ -10,7 +10,7 @@ What I've uploaded here differs a bit from the paper, this version has no residu
 
 I've tested this using the [GeoPose3k Dataset](http://cphoto.fit.vutbr.cz/geoPose3K/).
 
-# Code usage
+# Code Usage
 Usage instructions found here: [user manual page](USAGE.md).
 
 ## Example Output
