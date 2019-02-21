@@ -67,7 +67,7 @@ python train.py --load_state output/austria_3.json --res 128 --train_epoch 5000 
 - `weights`, `test images`, and `loss graph`, are all output to this directory: `output/<save_root>_*.*`
 
 - Loss Graph Example: `output/austria_loss_a.jpg`
-![](output/austria_loss.jpg)
+![](output/austria_loss_a.jpg)
 
 - Test Image Example (output every loop through dataset): `output/austria_649.jpg`
 ![](output/austria_649.jpg)
