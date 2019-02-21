@@ -1,5 +1,5 @@
-# self-attention-gan
-Pytorch implementation of Self Attention Gan based on [Self-Attention Generative Adversarial Networks](https://arxiv.org/pdf/1805.08318.pdf)
+# Self-Attention-Gan
+Pytorch implementation of `"Self-Attention Gan"` based on [Self-Attention Generative Adversarial Networks](https://arxiv.org/pdf/1805.08318.pdf)
 
 `THIS IS STILL IN PROGRESS, NOT READY TO CLONE`
 
