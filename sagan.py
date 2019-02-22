@@ -72,7 +72,7 @@ class Sagan:
         print('Data Loader Initialized: ' + str(self.datalen) + ' Images')
 
         self.model_dict["G"] = n.Generator(layers=int(math.log(params["res"], 2) - 3),
-                                           filts = params["gen_strech_z_filts"],
+                                           filts = params["gen_stretch_z_filts"],
                                            max_filts = params["gen_max_filts"],
                                            min_filts = params["gen_min_filts"],
                                            attention=params["attention"])

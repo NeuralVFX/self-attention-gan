@@ -15,4 +15,4 @@ Usage instructions found here: [user manual page](USAGE.md).
 
 ## Example Output
 ### GeoPose3k Dataset
-![](output/austria_1191.jpg)
+![](output/austria_1433.jpg)
