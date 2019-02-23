@@ -1,7 +1,7 @@
 # Self-Attention-Gan
 Pytorch implementation of `"Self-Attention Gan"` based on [Self-Attention Generative Adversarial Networks](https://arxiv.org/pdf/1805.08318.pdf)
 
-This is an attempt to build a SaGan, basically a Gan using Spectral Norm and Attention Layers in both the discriminator and generator.
+This is an attempt to build a SaGan, basically a Gan using Spectral Normalization and Attention Layers in both the discriminator and generator.
 
 What I've uploaded here differs a bit from the paper, this version has no residual blocks, and uses deconvolutions and stride 2 convolutions as opposed to up-sample and down-sample blocks.
 
