@@ -86,8 +86,7 @@ class Generator(nn.Module):
                                           oc=int(min(max_filts, filt_count)),
                                           kernel_size=kernel_size,
                                           padding=1,
-                                          drop=drop,
-                                          res=res)]
+                                          drop=drop)]
             if a == 1 and attention:
                 print('attn-block')
                 operations += [SelfAttention(int(min(max_filts, filt_count * 2)))]
@@ -98,14 +97,13 @@ class Generator(nn.Module):
                            oc=int(min(max_filts, filt_count)),
                            kernel_size=kernel_size,
                            padding=1,
-                           drop=center_drop, res=res),
+                           drop=center_drop),
             TransposeBlock(ic=z_size,
                            oc=filts,
                            kernel_size=kernel_size,
                            padding=0,
                            stride=1,
-                           drop=center_drop,
-                           res=res)
+                           drop=center_drop)
         ]
 
         operations.reverse()
