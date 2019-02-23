@@ -45,7 +45,7 @@ def disc_conv_block(ni, nf, kernel_size=3, stride=1):
 class SelfAttention(nn.Module):
     # block to allow convolutions to take a sneak peak at other areas of the image
     def __init__(self, in_channel):
-        super(SelfAttention).__init__()
+        super(SelfAttention, self).__init__()
         self.query = spectral_norm(nn.Conv1d(in_channel, in_channel // 8, 1))
         self.key = spectral_norm(nn.Conv1d(in_channel, in_channel // 8, 1))
         self.value = spectral_norm(nn.Conv1d(in_channel, in_channel, 1))
