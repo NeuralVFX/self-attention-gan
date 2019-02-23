@@ -73,7 +73,7 @@ class SelfAttention(nn.Module):
 class Generator(nn.Module):
     # Generator to convert Z sized vector to image
     def __init__(self, layers=5, z_size=128, filts=1024, max_filts=512, min_filts=128, kernel_size=4, channels=3,
-                 drop=.0, center_drop=.0, attention=True, res=True):
+                 drop=.0, center_drop=.0, attention=True):
         super(Generator, self).__init__()
         operations = []
 
