@@ -146,7 +146,6 @@ class Discriminator(nn.Module):
                 print('attn-block')
                 operations += [SelfAttention(min(filt_count * 2, filts))]
 
-            print(min(filt_count * 2, filts))
             filt_count = int(filt_count * 2)
 
         out_operations = [
